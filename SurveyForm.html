@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Page</title>
+  <link rel="stylesheet" type="text/css" href="SurveyForm.css">
+</head>
+<body>
+<div class="container">
+<div class="header">
+  <div id="title-div"><h1 id="title">Survey Form</h1>
+  </div>
+<div id="disc-div">
+<p id="description">Help us understand what percentage of the population understands the true power of technology.</p>
+  </div>
+  </div>
+  <form id="survey-form">
+    <div class="form-div">
+    <div class="container-1">
+            <!-- Name row -->
+    <div class="data input-row">
+      <div class="row-label">
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="row-input">
+        <input id="name" name="name" type="text" class="input-field" placeholder="name please..." required/>
+      </div>
+    </div>
+            <!-- email row -->
+    <div class="data input-row">
+      <div class="row-label">
+        <label id="email-label" for="email">Email:</label>
+      </div>
+      <div class="row-input">
+        <input id="email" name="email" type="email" class="input-field" placeholder="mail id here..." required/>
+      </div>
+    </div>
+            <!-- number row -->
+    <div class="data input-row">
+      <div class="row-label">
+        <label id="number-label" for="number">Age:</label>
+      </div>
+      <div class="row-input">
+        <input type="number" name="number" class="input-field" id="number" placeholder="between 10 to 50" min="10" max="50" required/>
+      </div>
+    </div>
+      <!-- drop down -->
+       <div class="input-row">
+      <div class="row-label">
+        <label for="dropdown" id="dropdown-label">Which option best describes your current sector?</label>
+      </div>
+      <div class="row-input dropdown">
+        <select id="dropdown" name="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="finance">Accountancy,Banking and Finance</option>
+          <option value="business">Business, Consultancy and Management</option>
+          <option value="charity">Charity and Voluntary work</option>
+          <option value="creative">Creative arts and Design</option>
+          <option value="energy">Energy and utilities</option>
+          <option value="engineering">Engineering and Manufacturing</option>
+          <option value="enviroment">Environment and Agriculture</option>
+          <option value="healthcare">Healthy</option>
+          <option value="hospility">Hospility and Events Management</option>
+          <option value="it">Information Technology</option>
+          <option value="law">Law</option>
+          <option value="security">Law enforcement and Security</option>
+          <option value="sport">Leisure, Sport and Tourism</option>
+          <option value="marketing">Marketing, Advertising and PR</option>
+          <option value="media">Media and Internet</option>
+          <option value="property">Property and Construction</option>
+          <option value="public">Public Services and Administration</option>
+          <option value="hr">Recruitment and HR</option>
+          <option value="retail">Retail</option>
+          <option value="sales">Sales</option>
+          <option value="science">Science and Pharmacuticals</option>
+          <option value="socialcare">Social Care</option>
+          <option value="teacher">Teacher Training and Education</option>
+          <option value="logistics">Transport and Logistics</option>
+        </select>
+      </div>
+    </div>
+    </div>
+    <div class="container-2">
+            <!-- dropdown -->
+   
+          <!-- radio buttons -->
+    <div class="input-row">
+      <div class="row-label">
+        <label for="radio" id="radio-label">What kind of impact did technology have on your sector?</label>
+      </div>
+      <div class="row-input">
+        <ul class="select-input">
+          <li id="radio">
+            <label><input type="radio" class="effect" value="1" name="radio-effect">Made our work easy</label>
+          </li>
+          <li id="radio">
+            <label><input type="radio" class="effect" value="2" name="radio-effect">Made our work harder</label>
+          </li>
+          <li id="radio">
+            <label><input type="radio" class="effect" value="3" name="radio-effect">No impact</label>
+          </li>
+      </div>
+     </div>
+          <!-- radio buttons -->
+    <div class="input-row">
+      <div class="row-label">
+        <label for="radio" id="radio-label">Do you believe technology can make lives better?</label>
+      </div>
+      <div class="row-input">
+        <ul class="select-input">
+          <li id="radio">
+            <label><input type="radio" class="effect" value="1" name="radio-belief">Yes</label>
+          </li>
+          <li id="radio">
+            <label><input type="radio" class="effect" value="2" name="radio-belief">No</label>
+          </li>
+      </div>
+     </div> 
+           <!-- check Boxes -->
+     <div class="input-row">
+       <div class="row-label">
+         <label for="check" id="check-btn">Which of these world changing technologies you heard of?</label>
+       </div>
+       <div class="row-input">
+         <ul class="select-input">
+          <li class="checkbox"><label><input name="known" value="1" type="checkbox" class="known">VR/AR</label></li>
+          <li class="checkbox"><label><input name="known" value="2" type="checkbox" class="known">AI,Machine Learning,Deep Learning</label></li>
+          <li class="checkbox"><label><input name="known" value="3" type="checkbox" class="known">BlockChain</label></li>
+          <li class="checkbox"><label><input name="known" value="4" type="checkbox" class="known">Cloud Computing</label></li>
+          <li class="checkbox"><label><input name="known" value="5" type="checkbox" class="known">Internet Of Things</label></li>
+          <li class="checkbox"><label><input name="known" value="6" type="checkbox" class="known"></label>Self Driving Cars</li>
+         </ul>
+       </div>
+      </div>
+      <!-- Text-area -->
+      <div class="input-row">
+        <div class="row-label">
+          <textarea id="thought" class="input-field" name="thought" placeholder="Enter your thoughts here..."></textarea>
+        </div>
+      </div>             
+     </div>
+    </div>
+        <!-- button -->
+  <div class="submit-row">
+        <button id="submit">Submit</button>
+      </div>
+  </form>
+</body>
+</html>
